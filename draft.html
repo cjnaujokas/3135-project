@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="fantasysports.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <script src="draft.js"></script>
+    
 </head>
 <header>
     <nav>
@@ -24,23 +24,32 @@
 <main>
     <div class="carousel-container">
         <button class="carousel-btn left"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="pick-button">Pick</button>
         <ul class="carousel">
-            <li class="carousel-item">
-                <div class="team-card active">
+            <li class="carousel-item active">
+                <div class="team-card">
                 <h1>Team Card 1</h1>
-                <ul>
-                    <li>person 1</li>
-                    <li>person 2</li>
-                    <li>person 3</li>
-                </ul>
+                <div class="athlete-card">
+                    <h3>Roman Khrennikov</h3>
+                    <img src="./images/khrennikov.jpg" alt="">
+                </div>
+                <div class="athlete-card">
+                    <h3>Jayson Hopper</h3>
+                    <img src="./images/hopper.jpg" alt="">
+                </div>
+                <div class="athlete-card">
+                    <h3>Emma Lawson</h3>
+                    <img src="./images/lawson.jpg" alt="">
+                </div>
+                
             </div>
         </li>
             <li class="carousel-item"><div class="team-card">
                 <h1>Team Card 2</h1>
                 <ul>
-                    <li>person 1</li>
-                    <li>person 2</li>
-                    <li>person 3</li>
+                    <li>Laura Horvath</li>
+                    <li>Alex Gazan</li>
+                    <li>Paige Powers</li>
                 </ul></li>
             <li class="carousel-item"><div class="team-card">
                 <h1>Team Card 3</h1>
@@ -53,13 +62,15 @@
         </ul>
         <button class="carousel-btn right"><i class="fa-solid fa-arrow-right"></i></button>
         <div class="carousel-nav">
-            <div class="nav-item"><i class="fa-solid fa-circle-dot"></i></div>
+            <div class="nav-item active"><i class="fa-solid fa-circle-dot"></i></div>
             <div class="nav-item"><i class="fa-solid fa-circle-dot"></i></div>
             <div class="nav-item"><i class="fa-solid fa-circle-dot"></i></div>
         </div>
     </div>
 
-    
+    <div class="score"><h1>Score: (Pick a team to get your score)</h1></div>
+
+    <script src="draft.js"></script>
 </main>
 <footer>
     <a class="small-text" href="mailto:fantasyLeague@notreal.com">fantasyLeague@notreal.com</a>
