@@ -1,0 +1,126 @@
+
+header {
+    background-color: #333;
+}
+header nav {
+    margin: 20px 20px 20px 20px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+h2 {
+    color: #007bff;
+    padding-top: 30px;
+    font-size: 40px;
+
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+li {
+    margin-bottom: 5px;
+    border: 1px solid #007bff;
+    padding: 5px;
+    font-weight: bold;
+    color: #ffff;
+}
+
+.current-standings {
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table-container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.table-container table {
+    margin:15px;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #777676;
+    padding: 10px;
+}
+
+.small-text {
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+form {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+#disclaimer {
+    color: #ff0000;
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.adler-toomey {
+    display: flex;
+    width: 400px;
+    height: auto;
+    padding: 20px;
+}
+
+.layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.column {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column img {
+    width: 100%;
+    margin: 30px 0;
+    max-width: 300px;
+}
