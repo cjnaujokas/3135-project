@@ -1,29 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Fantasy Sports League</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="fantasysports.css">
-</head>
-<header>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="fantasysports.css" />
+  </head>
+  <header>
     <nav>
-        <h2>Fantasy Sports</h2>
-        <img class="logo" src="./images/fitlogo.jpg" alt="Fantasy Sports Logo">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="draft.html">Draft</a></li>
-            <li><a href="league.html">League</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
+      <h2>Fantasy Sports</h2>
+      <img class="logo" src="./images/fitlogo.jpg" alt="Fantasy Sports Logo" />
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="draft.html">Draft</a></li>
+        <li><a href="league.html">League</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
     </nav>
-</header>
-<main>
-    <h1>Coming Soon!</h1>
-    <p> There are no active leagues at this time, please be patient while we add leagues.<br></p>
-</main>
-<footer>
-    <a class="small-text" href="mailto:fantasyLeague@notreal.com">fantasyLeague@notreal.com</a>
+  </header>
+  <main>
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-header">Team 1</button>
+        <div class="accordion-content">
+          <table class="team-table">
+            <tr>
+              <th>Name</th>
+              <th>Score</th>
+              <th>country</th>
+            </tr>
+            <tr>
+              <td>Roman Khrennikov</td>
+              <td>610</td>
+              <td>
+                <img class="emblem" src="./images/russia.png" alt="RUS" />
+              </td>
+            </tr>
+            <tr>
+              <td>Jayson Hopper</td>
+              <td>545</td>
+              <td>
+                <img
+                  class="emblem"
+                  src="./images/united-states.png"
+                  alt="USA"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Emma Lawson</td>
+              <td>650</td>
+              <td>
+                <img
+                  class="emblem"
+                  src="./images/united-states.png"
+                  alt="USA"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th>Total Score</th>
+              <th>1805</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">Team 2</button>
+        <div class="accordion-content">
+          <table class="team-table">
+            <tr>
+              <th>Name</th>
+              <th>Score</th>
+              <th>country</th>
+            </tr>
+            <tr>
+              <td>Pat Vellner</td>
+              <td>660</td>
+              <td>
+                <img class="emblem" src="./images/canada.png" alt="RUS" />
+              </td>
+            </tr>
+            <tr>
+              <td>Paige Semenza</td>
+              <td>390</td>
+              <td>
+                <img
+                  class="emblem"
+                  src="./images/united-states.png"
+                  alt="USA"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Arielle Loewen</td>
+              <td>510</td>
+              <td>
+                <img
+                  class="emblem"
+                  src="./images/united-states.png"
+                  alt="USA"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th>Total Score</th>
+              <th>1560</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">Team 3</button>
+        <div class="accordion-content">
+          <table class="team-table">
+            <tr>
+              <th>Name</th>
+              <th>Score</th>
+              <th>country</th>
+            </tr>
+            <tr>
+              <td>Jay Crouch</td>
+              <td>540</td>
+              <td>
+                <img class="emblem" src="./images/australia.png" alt="RUS" />
+              </td>
+            </tr>
+            <tr>
+              <td>Chandler Smith</td>
+              <td>455</td>
+              <td>
+                <img
+                  class="emblem"
+                  src="./images/united-states.png"
+                  alt="USA"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Kyra Milligan</td>
+              <td>295</td>
+              <td>
+                <img
+                  class="emblem"
+                  src="./images/united-states.png"
+                  alt="USA"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th>Total Score</th>
+              <th>1290</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="leagues.js"></script>
+  <footer>
+    <a class="small-text" href="mailto:fantasyLeague@notreal.com"
+      >fantasyLeague@notreal.com</a
+    >
     <p>&copy; 2023 Fantasy Sports League. All rights reserved.</p>
-</footer>
+  </footer>
+</html>

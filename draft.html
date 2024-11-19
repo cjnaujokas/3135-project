@@ -6,7 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="fantasysports.css">
-    <script src="draft.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
 </head>
 <header>
     <nav>
@@ -21,38 +22,74 @@
     </nav>
 </header>
 <main>
-    <form class="pool-names" action="#">
-        <label for="person1">Person 1:</label><br>
-        <input type="text" id="person1" name="person1"><br>
-        <label for="person2">Person 2:</label><br>
-        <input type="text" id="person2" name="person2"><br>
-        <label for="person3">Person 3:</label><br>
-        <input type="text" id="person3" name="person3"><br>
-        <label for="person4">Person 4:</label><br>
-        <input type="text" id="person4" name="person4"><br><br>
-        <input type="submit" value="Submit">
-    </form>
+    <div class="carousel-container">
+        <button class="carousel-btn left"><i class="fa-solid fa-arrow-left"></i></button>
+        
+        <ul class="carousel">
+            <li class="carousel-item active">
+                <div class="team-card">
+                <h1>Team Card 1</h1>
+                <div class="athlete-card">
+                    <h3>Roman Khrennikov</h3>
+                    <img src="./images/khrennikov.jpg" alt="Roman Khrennikov">
+                </div>
+                <div class="athlete-card">
+                    <h3>Jayson Hopper</h3>
+                    <img src="./images/hopper.jpg" alt="Jayson Hopper">
+                </div>
+                <div class="athlete-card">
+                    <h3>Emma Lawson</h3>
+                    <img src="./images/lawson.jpg" alt="Emma Lawson">
+                </div>
+                </div>
+            </li>
+            <li class="carousel-item"><div class="team-card">
+                <div class="team-card">
+                    <h1>Team Card 2</h1>
+                    <div class="athlete-card">
+                        <h3>Pat Vellner</h3>
+                        <img src="./images/pvellner.jpg" alt="Pat vellner">
+                    </div>
+                    <div class="athlete-card">
+                        <h3>Paige Semenza</h3>
+                        <img src="./images/semenza.jpg" alt="Paige Semenza">
+                    </div>
+                    <div class="athlete-card">
+                        <h3>Arielle Loewen</h3>
+                        <img src="./images/loewen.jpg" alt="Arielle Loewen">
+                    </div>
+                </div>
+            </li>
+            <li class="carousel-item"><div class="team-card">
+                <div class="team-card">
+                    <h1>Team Card 3</h1>
+                    <div class="athlete-card">
+                        <h3>Jay Crouch</h3>
+                        <img src="./images/crouch.jpg" alt="Jay Crouch">
+                    </div>
+                    <div class="athlete-card">
+                        <h3>Chandler Smith</h3>
+                        <img src="./images/smith.jpg" alt="Chandler Smith">
+                    </div>
+                    <div class="athlete-card">
+                        <h3>Kyra Milligan</h3>
+                        <img src="./images/milligan.jpg" alt="Kyra Milligan">
+                    </div>
+                    </div>
+            </li>
+            
+        </ul>
+        <button class="carousel-btn right"><i class="fa-solid fa-arrow-right"></i></button>
+        <div class="carousel-nav">
+            <div class="nav-item active"><i class="fa-solid fa-circle-dot"></i></div>
+            <div class="nav-item"><i class="fa-solid fa-circle-dot"></i></div>
+            <div class="nav-item"><i class="fa-solid fa-circle-dot"></i></div>
+        </div>
+    </div>
+    <button class="pick-button">Pick</button>
+    <div class="score"><h1>Score: (Pick a team to get your score)</h1></div>
 
-    <h1>Draft</h1>
-    <table id="draft-table">
-        <thead>
-            <tr>
-                <th>Player</th>
-                <th>picks</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Populate the table -->
-        </tbody>
-    </table>
-    
-    <h1>Draft-Pool</h1>
-    <table id="draft-pool">
-        <tbody>
-            <!-- Populate the table -->
-        </tbody>
-    </table>
-    
+    <script src="draft.js"></script>
 </main>
 <footer>
     <a class="small-text" href="mailto:fantasyLeague@notreal.com">fantasyLeague@notreal.com</a>

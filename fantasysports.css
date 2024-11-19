@@ -1,126 +1,332 @@
-
 header {
-    background-color: #333;
+  background-color: #333;
 }
 header nav {
-    margin: 20px 20px 20px 20px;
+  margin: 20px 20px 20px 20px;
 }
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
 }
 
 h2 {
-    color: #007bff;
-    padding-top: 30px;
-    font-size: 40px;
-
+  color: #007bff;
+  padding-top: 30px;
+  font-size: 40px;
 }
 
 p {
-    font-size: 16px;
-    line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
 }
 
-li {
-    margin-bottom: 5px;
-    border: 1px solid #007bff;
-    padding: 5px;
-    font-weight: bold;
-    color: #ffff;
+nav li {
+  margin-bottom: 5px;
+  border: 1px solid #007bff;
+  padding: 5px;
+  font-weight: bold;
+  color: #ffff;
 }
 
 .current-standings {
-    border-collapse: collapse;
-    display: flex;
-    justify-content: center;
+  border-collapse: collapse;
+  display: flex;
+  justify-content: center;
 }
 
-td, th {
-    border: 1px solid #ddd;
-    padding: 8px;
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
 
 .table-container {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .table-container table {
-    margin:15px;
+  margin: 15px;
 }
 
 footer {
-    bottom: 0;
-    width: 100%;
-    background-color: #777676;
-    padding: 10px;
+  bottom: 0;
+  width: 100%;
+  background-color: #777676;
+  padding: 10px;
 }
 
 .small-text {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 form {
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
 }
 
 #disclaimer {
-    color: #ff0000;
-    text-align: center;
+  color: #ff0000;
+  text-align: center;
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
-    margin: 5px;
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .adler-toomey {
-    display: flex;
-    width: 400px;
-    height: auto;
-    padding: 20px;
+  display: flex;
+  width: 400px;
+  height: auto;
+  padding: 20px;
 }
 
 .layout {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .column {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .column img {
-    width: 100%;
-    margin: 30px 0;
-    max-width: 300px;
+  width: 100%;
+  margin: 30px 0;
+  max-width: 300px;
+}
+
+.carousel-container {
+  width: 70%;
+  margin: 0 auto;
+
+  position: relative;
+}
+
+.carousel {
+  width: 100%;
+  height: 400px;
+
+  position: relative;
+}
+
+.carousel-item {
+  height: 100%;
+  width: 100%;
+
+  opacity: 0;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: 300ms opacity ease-in-out;
+  transition-delay: 150ms;
+}
+
+.carousel-item.active {
+  opacity: 1;
+}
+
+.carousel-item .team-card {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.carousel-btn {
+  background: transparent;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+
+  position: absolute;
+  top: 45%;
+
+  height: 2rem;
+  width: 2rem;
+  border-radius: 25%;
+}
+
+.carousel-btn.left {
+  left: -2.5rem;
+}
+
+.carousel-btn.right {
+  right: -5rem;
+}
+
+.carousel-btn:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.nav-item {
+  opacity: 0.5;
+}
+
+.nav-item.active {
+  opacity: 1;
+}
+
+.team-card h1 {
+  color: #ffff;
+  text-align: center;
+  font-size: 1.5em;
+  grid-column: 2;
+}
+
+.team-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 40px 1fr 40px;
+  justify-items: center;
+  background-image: url("./images/colleseum.jpg");
+  /* background-color: #777676; */
+  border-radius: 15px;
+}
+
+.athlete-card {
+  grid-row: 2;
+  background-color: #a8a8a8;
+  border: #007bff 1px solid;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 10vw;
+}
+
+.pick-button {
+  grid-row: 3;
+  grid-column: 2;
+  background-color: #007bff;
+  border-radius: 10%;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+}
+
+.score {
+  text-align: center;
+}
+
+.accordion {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-header {
+  background-color: #f1f1f1;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.accordion-header:hover {
+  background-color: #ddd;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: #fff;
+}
+
+.emblem {
+  width: 50px;
+  height: 50px;
+}
+
+.team-table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#event-select {
+  font-size: 16px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+#countdown {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#countdown span {
+  color: #007bff;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.event-select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+main {
+  text-align: center;
+  margin: 10px;
 }
