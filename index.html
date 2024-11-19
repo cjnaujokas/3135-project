@@ -1,74 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <title>Fantasy Sports</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="fantasysports.css">
-  <script src="leaderboard.js"></script>
-</head>
-<header>
-  <nav>
-    <h2>Fantasy Sports</h2>
-    <img class="logo" src="./images/fitlogo.jpg" alt="Fantasy Sports Logo">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="draft.html">Draft</a></li>
-      <li><a href="league.html">League</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </nav>
-</header>
+  <head>
+    <title>Fantasy Sports</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="fantasysports.css" />
+    <script src="leaderboard.js"></script>
+  </head>
+  <header>
+    <nav>
+      <h2>Fantasy Sports</h2>
+      <img class="logo" src="./images/fitlogo.jpg" alt="Fantasy Sports Logo" />
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="draft.html">Draft</a></li>
+        <li><a href="league.html">League</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
   <main>
     <div class="layout">
       <div class="column left-column">
-        <img src="./images/vellner.jpg" alt="1">
-        <img src="./images/migala.jpg" alt="2">
-        <img src="./images/Froning.jpg" alt="3">
+        <img src="./images/vellner.jpg" alt="1" />
+        <img src="./images/migala.jpg" alt="2" />
+        <img src="./images/Froning.jpg" alt="3" />
       </div>
 
-
       <div class="table-container">
-      <table class="current-standings-men" id="leaderboard-men">
-        <thead>
-          <tr>
-            <th>Rank</th>
-            <th>Competitor Name</th>
-            <th>Score</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Data will be populated here -->
-        </tbody>
-
-
-      </table>
-      <table class="current-standings-women" id="leaderboard-women">
-        <thead>
-          <tr>
-            <th>Rank</th>
-            <th>Competitor Name</th>
-            <th>Score</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Data will be populated here -->
-        </tbody>
-
-
-      </table>
+        <table class="current-standings-men" id="leaderboard-men">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Competitor Name</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Data will be populated here -->
+          </tbody>
+        </table>
+        <table class="current-standings-women" id="leaderboard-women">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Competitor Name</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Data will be populated here -->
+          </tbody>
+        </table>
+      </div>
+      <div class="column right-column">
+        <img src="./images/dukic.jpg" alt="1" />
+        <img src="./images/brandon.jpg" alt="2" />
+        <img src="./images/adler-toomey.jpg" alt="3" />
+      </div>
     </div>
-    <div class="column right-column">
-      <img src="./images/dukic.jpg" alt="1">
-      <img src="./images/brandon.jpg" alt="2">
-      <img src="./images/adler-toomey.jpg" alt="3">
-    </div>
-    </div>
-    <p id="disclaimer">Last years competitors shown (2023), with their performance. This years competitors (2024) will
-      be shown when it is announced.</p>
+    <p id="disclaimer">Competition year 2023 shown</p>
   </main>
   <footer>
-    <a class="small-text" href="mailto:fantasyLeague@notreal.com">fantasyLeague@notreal.com</a>
+    <a class="small-text" href="mailto:fantasyLeague@notreal.com"
+      >fantasyLeague@notreal.com</a
+    >
     <p>&copy; 2023 Fantasy Sports League. All rights reserved.</p>
   </footer>
+</html>

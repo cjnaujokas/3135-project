@@ -1,32 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Fantasy Sports League About</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="fantasysports.css">
-</head>
-<header>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="fantasysports.css" />
+  </head>
+  <header>
     <nav>
-        <h2>Fantasy Sports</h2>
-        <img class="logo" src="./images/fitlogo.jpg" alt="Fantasy Sports Logo">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="draft.html">Draft</a></li>
-            <li><a href="league.html">League</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
+      <h2>Fantasy Sports</h2>
+      <img class="logo" src="./images/fitlogo.jpg" alt="Fantasy Sports Logo" />
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="draft.html">Draft</a></li>
+        <li><a href="league.html">League</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
     </nav>
-</header>
-<main>
-
+  </header>
+  <main>
     <h1>About Us</h1>
+    <p>
+      Welcome to Fantasy Sports League! We are a team of passionate sports fans
+      who believe in the power of fantasy sports to bring joy and excitement to
+      the world of sports.
+    </p>
+    <p>
+      Hopefully, you have already had a chance to explore our website. Below is
+      a countdown to your chosen event.
+    </p>
+    <div class="event-select">
+      <label for="event-select">Choose an event:</label>
+      <select id="event-select">
+        <option value="2025-03-03T00:00:00">
+          CrossFit Open - March 3, 2025
+        </option>
+        <option value="2024-12-25T00:00:00">Christmas 2024</option>
+      </select>
+    </div>
 
-    <p>This website is a project on how to learn how to use HTML CSS and JS to build a fantasy sports league web application.</p>
-    <p>More functionality is planned, many of the features are not working as planned and need more work. In the future, members will be able to conduct their drafts and keep track.</p>
-</main>
-<footer>
-    <a class="small-text" href="mailto:fantasyLeague@notreal.com">fantasyLeague@notreal.com</a>
+    <div id="countdown">
+      <span id="days">00</span> Days <span id="hours">00</span> Hours
+      <span id="minutes">00</span> Minutes <span id="seconds">00</span> Seconds
+    </div>
+  </main>
+  <script src="countdown.js"></script>
+  <footer>
+    <a class="small-text" href="mailto:fantasyLeague@notreal.com"
+      >fantasyLeague@notreal.com</a
+    >
     <p>&copy; 2023 Fantasy Sports League. All rights reserved.</p>
-</footer>
+  </footer>
+</html>
