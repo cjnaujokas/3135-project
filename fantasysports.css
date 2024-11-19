@@ -240,12 +240,58 @@ form {
   background-color: #007bff;
   border-radius: 10%;
   font-weight: bold;
-  /*************  ✨ Codeium Command ⭐  *************/
   display: block;
   margin: 0 auto;
-  /******  c595ecdb-d1df-4c52-955d-c259aaefa17b  *******/
 }
 
 .score {
+  text-align: center;
+}
+
+.accordion {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-header {
+  background-color: #f1f1f1;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.accordion-header:hover {
+  background-color: #ddd;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: #fff;
+}
+
+.emblem {
+  width: 50px;
+  height: 50px;
+}
+
+.team-table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto;
   text-align: center;
 }
