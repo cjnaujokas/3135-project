@@ -39,42 +39,10 @@ async function populateLeaderboardTable(url, ldrdata, leaderboardId) {
       ldrdata.push(add_data);
     }
 
-    // Update the leaderboard once the data is populated
     updateLeaderboard(ldrdata, leaderboardId);
   } catch (error) {
     console.error("There has been a problem with your fetch operation:", error);
   }
-
-  // fetch(url)
-  //     .then(response => {
-  //         // Check if the request was successful
-  //         if (!response.ok) {
-  //             throw new Error('Network response was not ok ' + response.statusText);
-  //         }
-  //         return response.json(); // Convert the response data to JSON
-  //     })
-  //     .then(raw_leaderboard => {
-
-  //         const bodyRows = raw_leaderboard.data.body_rows;
-  //         // Debug
-  //         // console.log(bodyRows);
-
-  //         for (let i = 0; i < bodyRows.length; i++) {
-  //             const competitor = bodyRows[i][0];
-  //             const add_data = {
-  //                 rank: competitor.ordinalRank,
-  //                 name: competitor.competitor_name,
-  //                 score: competitor.cum_workout_rank
-  //             };
-  //             ldrdata.push(add_data);
-  //         }
-
-  //         // Update the leaderboard once the data is populated
-  //         updateLeaderboard(ldrdata,leaderboardId);
-  //     })
-  //     .catch(error => {
-  //         console.error('There has been a problem with your fetch operation:', error);
-  //     });
 
   // Function to update the leaderboard table
   function updateLeaderboard(data, leaderboardId) {
