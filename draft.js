@@ -71,12 +71,21 @@ function navClick(e) {
   }
 }
 
+const errorContainer = document.querySelector(".error");
+
+function showError(message) {
+  errorContainer.textContent = message;
+  if (errorContainer.classList.contains("hidden")) {
+    errorContainer.classList.remove("hidden");
+  }
+}
+
 async function getScores() {
   try {
     const response = await fetch(url);
 
     if (!response.ok) {
-      throw new Error("Network response was not ok " + response.statusText);
+      throw new Error("Error: " + response.statusText);
     }
 
     const raw_leaderboard = await response.json();
@@ -94,7 +103,7 @@ async function getScores() {
     const response2 = await fetch(url2);
 
     if (!response2.ok) {
-      throw new Error("Network response was not ok " + response2.statusText);
+      throw new Error("Error: " + response2.statusText);
     }
 
     const raw_leaderboard2 = await response2.json();
@@ -109,7 +118,7 @@ async function getScores() {
       competitors[name] = score;
     }
   } catch (error) {
-    console.error("There was a problem with the fetch operation:", error);
+    showError(error.message);
   }
 }
 
