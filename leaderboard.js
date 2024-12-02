@@ -17,6 +17,15 @@ document.addEventListener("DOMContentLoaded", function () {
   //     .then(response => response.json())
   //     .then(data => console.log(data))
 });
+
+const errorContainer = document.querySelector(".error");
+function showError(message) {
+  errorContainer.textContent = message;
+  if (errorContainer.classList.contains("hidden")) {
+    errorContainer.classList.remove("hidden");
+  }
+}
+
 async function populateLeaderboardTable(url, ldrdata, leaderboardId) {
   try {
     const response = await fetch(url);
@@ -41,7 +50,7 @@ async function populateLeaderboardTable(url, ldrdata, leaderboardId) {
 
     updateLeaderboard(ldrdata, leaderboardId);
   } catch (error) {
-    console.error("There has been a problem with your fetch operation:", error);
+    showError(error.message);
   }
 
   // Function to update the leaderboard table
